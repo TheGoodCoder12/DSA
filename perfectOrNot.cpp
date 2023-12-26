@@ -2,8 +2,8 @@
 #include<vector>
 
 using namespace std;
-int &N;
-bool perfect(int &array[&N][&N]){
+int N=3;
+bool perfect(int &array[][N]){
     int diagonal;
     if (array[0][0]==0)
     {
@@ -42,6 +42,6 @@ bool perfect(int &array[&N][&N]){
 int main(){
     N=3;
     int array[3][3]={{1,0,0},{0,1,0},{0,0,1}}; 
-    cout<<perfect(array[N][N]);
+    cout<<perfect(array);
     return 0;
 }
